@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>me.CHANGEME</groupId>
-    <artifactId>SlimefunAddon</artifactId>
+    <groupId>me.nocturus</groupId>
+    <artifactId>ScienceTree</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -15,18 +15,12 @@
 
     <repositories>
         <repository>
-            <id>paper-repo</id>
-            <url>https://repo.destroystokyo.com/repository/maven-public/</url>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
-
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
@@ -55,16 +49,10 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Slimefun</groupId>
+            <groupId>io.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-28</version>
+            <version>RC-37</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.github.baked-libs</groupId>
-                    <artifactId>dough-api</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 </project>
